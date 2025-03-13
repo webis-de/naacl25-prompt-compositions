@@ -1,4 +1,24 @@
-# Bias Detection
+# Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection
+
+Code for the paper [Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection](https://arxiv.org/abs/2502.06487).
+
+For details on the approach, architecture and idea, please see the published paper.
+
+```
+@inproceedings{spliethover-etal-2025-adaptive,
+    title =      "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+    author =     Splieth{\"o}ver, Maximilian and Knebler, Tim and Fumagalli, Fabian and Muschalik, Maximilian and Hammer, Barbara and H{\"u}llermeier, Eyke and Wachsmuth, Henning,
+    booktitle =  "Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics",
+    month =      apr,
+    year =       "2025",
+    address =    "Albuquerque, New Mexico",
+    publisher =  "Association for Computational Linguistics",
+    url =        "https://arxiv.org/abs/2502.06487",
+}
+
+```
+
+---
 
 _All experiments were conducted using Python 3.10.4_
 
