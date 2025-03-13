@@ -1,0 +1,4 @@
+shapiq
+pandas
+pyarrow
+fastparquet

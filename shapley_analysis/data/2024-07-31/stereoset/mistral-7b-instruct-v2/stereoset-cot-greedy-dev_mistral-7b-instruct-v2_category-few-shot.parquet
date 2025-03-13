@@ -1,0 +1,9 @@
+This is an example file. This is not a real .parquet file. This file is here to showcase how a mistral result file should be stored/extracted.
+
+The path must be: TIMESTAMP>DATASET>MODEL_NAME>xyz.parquet
+
+Valid Model Names: ["mistral-7b-instruct-v2", "llama3-70b-instruct", "command-r-v01"]
+Valid Dataset Names: ["stereoset", "sbic", "cobra"]
+Valid Timestamps: ["2024-07-31"]
+
+Extract and Strucutre the files accordingly.
