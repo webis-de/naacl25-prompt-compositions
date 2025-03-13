@@ -17,6 +17,6 @@ pyarrow==16.0.0
 sentence-transformers==2.7.0
 sentencepiece==0.2.0
 tensorboardx==2.6.2.2
-tqdm==4.66.2
+tqdm==4.66.3
 transformers==4.41.2
 pytest
