@@ -1,0 +1,9 @@
+{
+    "zero_shot_base": "Let's think step by step.",
+    "zero_shot_sbic": "Let's break down the statement to determine whether it is considered biased or not.",
+    "zero_shot_stereoset": "Let's break down the text to determine whether it uses stereotypes or not.",
+    "zero_shot_cobra_frames": "Let's consider the intent of the speaker, the targeted minority group and the implied meaning to evaluate whether the statement elicits social bias or not.",
+    "zero_shot_absa": "Let's break down the text to determine whether it has a positive or negative sentiment.",
+    "zero_shot_esnli": "Let's break down the relationship between the premise and the hypothesis to determine whether it is an entailment or a contradiction and write an explanation.",
+    "zero_shot_common_sense_qa": "Let's consider the question concept and possible distractors to better determine if the answer is correct or not. A question concept refers to the central idea or subject around which a question is framed. A distractor is a plausible but incorrect option in a multiple-choice question, designed to mislead or challenge the test-taker."
+}

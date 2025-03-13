@@ -1,0 +1,8 @@
+{
+    "sbic": "Possible types of biases: 'body', 'culture', 'disabled', 'gender', 'race', 'social', 'victim', 'no bias'",
+    "stereoset": "Possible types of biases: 'race', 'gender', 'profession', 'religion', 'no bias'",
+    "cobra_frames": "Possible targeted groups of biased statements are: 'muslim', 'asian', 'lgbtq', 'native_american', 'chinese', 'mental_dis', 'women', 'mexican', 'latino', 'black', 'jewish' and 'no group'.",
+    "absa": "The review is about a {}. It can have a positive or a negative sentiment.",
+    "esnli": "Possible logical relationships between the sentences: 'entailment' (the premise logically guarantees the truth of the hypothesis, often involving paraphrasing, elaborating, or extending information from the premise), and 'contradiction' (the premise directly negates the hypothesis, often involving words with opposing meanings or premise and hypothesis contain different topics).",
+    "common_sense_qa": "Possible outcomes: 'yes' (the answer is supported by common sense reasoning, i.e., it aligns with general knowledge or practical understanding), or 'no' (the answer is not supported by common sense reasoning, i.e., it is irrelevant, logically inconsistent, or conflicts with general knowledge)."
+}

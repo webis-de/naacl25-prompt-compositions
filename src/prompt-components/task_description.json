@@ -1,0 +1,14 @@
+{
+    "sbic": "Given the input text, provide an annotation to determine whether the text is biased. Use only the labels \"yes\" (indicating the text is biased) and \"no\" (indicating the text is not biased).",
+    "sbic_cot": "Given the input text, provide a concise, step-by-step reasoning to determine whether the text is biased or not.",
+    "stereoset": "Given the input text, provide an annotation for whether the text contains a stereotype. Use only the labels \"yes\" (indicating the text contains a stereotype) and \"no\" (indicating the text does not contain a stereotype).",
+    "stereoset_cot": "Given the input text, provide a concise, step-by-step reasoning to determine whether the text contains a stereotype or not.",
+    "cobra_frames": "Given the statement and information about speaker, listener and situational context, provide an annotation to determine whether the statement is biased. Use only the labels \"yes\" (indicating the text is biased) and \"no\" (indicating the text is not biased).",
+    "cobra_frames_cot": "Given the statement and information about speaker, listener and situational context, provide a concise, step-by-step reasoning to determine whether the text is biased or not.",
+    "absa": "Given the input text and its relevant aspect terms, determine the sentiment of the input text (positive, negative, or neutral).",
+    "absa_cot": "Given the input text, and its relevant aspects terms, determine the polarity of each aspect term (positive, negative, or neutral), provide a concise, step-by-step reasoning to determine the overall sentiment of the text.",
+    "esnli": "Given two sentences, the first being a premise and the second a hypothesis, provide an annotation to classify their relationship. Use only the labels \"entailment\" (indicating the hypothesis logically follows from the premise) or \"contradiction\" (indicating the hypothesis is logically incompatible with the premise).",
+    "esnli_cot": "Given two sentences, the first being a premise and the second a hypothesis, provide a concise, step-by-step reasoning to determine whether the relationship between the sentences is an entailment (the hypothesis logically follows from the premise) or a contradiction (the hypothesis is logically incompatible with the premise).",
+    "common_sense_qa": "Given a question and an answer, provide an annotation to determine whether the answer is correct. Use common sense to determine your answer. Use only the labels 'yes' (if the answer is correct) or 'no' (if the answer is incorrect).",
+    "common_sense_qa_cot": "Given a question and an answer, provide an step-by-step reasoning to determine whether the answer is correct. Use common sense while writing your reasoning."
+}

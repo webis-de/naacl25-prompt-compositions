@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flex-infer"
+version = "0.0.1"
+authors = [{name = "brotSchimmelt"}]
+description = "flex-infer is a comprehensive toolkit for streamlining and simplifying the inference process for LLMs across various models and libraries."
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "icecream"
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+select = ["E", "F"]
+line-length = 100
+
+# Ignore `F401` violations in any `__init__.py`
+per-file-ignores = {"__init__.py" = ["F401"]}
