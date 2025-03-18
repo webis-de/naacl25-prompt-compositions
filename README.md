@@ -51,6 +51,10 @@ To run the experiments, download the pre-trained LLMs from Hugging Face:
 
 You can set the path to the models using the ```models``` variable at the beginning of the ```run_experiments.sh``` script.
 
+To obtain the similarity-based few-shot examples for the bias detection experiments, you’ll need to download the ```all-mpnet-base-v2``` embedding model. By default, the model is expected at ```models/all-mpnet-base-v2```, but you can customize this path by modifying the ```SENTENCE_TRANSFORMER_MODELS``` variable in the ```src/bias_detection/config/settings.py``` file.
+
+The model is available on Hugging Face: <https://huggingface.co/sentence-transformers/all-mpnet-base-v2>
+
 ## Load the Datasets
 
 The datasets can be found here:
