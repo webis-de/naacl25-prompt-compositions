@@ -43,7 +43,7 @@ pip install -e ./src/flex-infer
 
 ## Load the Models
 
-To run the experiments, download the pre-trained LLMs from Hugging Face:
+To run the experiments, download the pre-trained LLMs from [Hugging Face](https://huggingface.co/):
 
 - Mistral: <https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2>
 - Command R: <https://huggingface.co/CohereForAI/c4ai-command-r-v01>
@@ -82,7 +82,7 @@ To run the social bias detection experiments, execute the ```run_experiments.sh`
 
 ## Pre-trained models
 
-The trained models and their predictions on all datasets evaluated in the paper can be found on [Huggingface](https://huggingface.co/):
+The trained models and their predictions on all datasets evaluated in the paper can be found on Hugging Face:
 
 - [Finetune baseline models](https://huggingface.co/webis/naacl25-prompt-compositions_finetune-baseline)
 - [Social bias classification models](https://huggingface.co/webis/naacl25-prompt-compositions_composition-prediction)
