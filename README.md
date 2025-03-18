@@ -25,16 +25,16 @@ _All experiments were conducted using Python 3.10.4_
 ## Install Dependencies
 
 ```bash
-conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
+conda create --name prompt-compositions python=3.10.14 -y
 
-pip install deepspeed
+conda activate prompt-compositions
+
+# choose the appropriate CUDA version for your environment
+conda install cuda -c nvidia/label/cuda-12.1.0
 
 pip install -r requirements.txt
 
-# Necessary, since it is installed as vllm dependency, but already present
-# as installation from conda repositories
-pip uninstall torch
-
+# we need to upgrade outlines to 0.0.39 in order to integrate with vLLM
 pip install outlines==0.0.39 --force-reinstall --no-deps
 
 # custom library for easier inference
@@ -76,8 +76,8 @@ To run the social bias detection experiments, execute the ```run_experiments.sh`
 ./run_experiments.sh experiments/sbic_greedy.py sbic-greedy_ test 1
 ```
 
-
 ## Pre-trained models
+
 The trained models and their predictions on all datasets evaluated in the paper can be found on [Huggingface](https://huggingface.co/):
 
 - [Finetune baseline models](https://huggingface.co/webis/naacl25-prompt-compositions_finetune-baseline)
