@@ -25,16 +25,16 @@ _All experiments were conducted using Python 3.10.4_
 ## Install Dependencies
 
 ```bash
-conda install pytorch pytorch-cuda=12.1 -c pytorch -c nvidia
+conda create --name prompt-compositions python=3.10.14 -y
 
-pip install deepspeed
+conda activate prompt-compositions
+
+# choose the appropriate CUDA version for your environment
+conda install cuda -c nvidia/label/cuda-12.1.0
 
 pip install -r requirements.txt
 
-# Necessary, since it is installed as vllm dependency, but already present
-# as installation from conda repositories
-pip uninstall torch
-
+# we need to upgrade outlines to 0.0.39 in order to integrate with vLLM
 pip install outlines==0.0.39 --force-reinstall --no-deps
 
 # custom library for easier inference
@@ -43,13 +43,17 @@ pip install -e ./src/flex-infer
 
 ## Load the Models
 
-To run the experiments, download the pre-trained LLMs from Hugging Face:
+To run the experiments, download the pre-trained LLMs from [Hugging Face](https://huggingface.co/):
 
 - Mistral: <https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2>
 - Command R: <https://huggingface.co/CohereForAI/c4ai-command-r-v01>
 - Llama 3: <https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct>
 
 You can set the path to the models using the ```models``` variable at the beginning of the ```run_experiments.sh``` script.
+
+To obtain the similarity-based few-shot examples for the bias detection experiments, you’ll need to download the ```all-mpnet-base-v2``` embedding model. By default, the model is expected at ```models/all-mpnet-base-v2```, but you can customize this path by modifying the ```SENTENCE_TRANSFORMER_MODELS``` variable in the ```src/bias_detection/config/settings.py``` file.
+
+The model is available on Hugging Face: <https://huggingface.co/sentence-transformers/all-mpnet-base-v2>
 
 ## Load the Datasets
 
@@ -76,9 +80,9 @@ To run the social bias detection experiments, execute the ```run_experiments.sh`
 ./run_experiments.sh experiments/sbic_greedy.py sbic-greedy_ test 1
 ```
 
-
 ## Pre-trained models
-The trained models and their predictions on all datasets evaluated in the paper can be found on [Huggingface](https://huggingface.co/):
+
+The trained models and their predictions on all datasets evaluated in the paper can be found on Hugging Face:
 
 - [Finetune baseline models](https://huggingface.co/webis/naacl25-prompt-compositions_finetune-baseline)
 - [Social bias classification models](https://huggingface.co/webis/naacl25-prompt-compositions_composition-prediction)
