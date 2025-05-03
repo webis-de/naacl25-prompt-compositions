@@ -1,21 +1,23 @@
 # Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection
 
-Code for the paper [Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection](https://arxiv.org/abs/2502.06487).
+Code for the paper [Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection](https://aclanthology.org/2025.naacl-long.122/).
 
 For details on the approach, architecture and idea, please see the published paper.
 
 ```
 @inproceedings{spliethover-etal-2025-adaptive,
-    title =      "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
-    author =     Splieth{\"o}ver, Maximilian and Knebler, Tim and Fumagalli, Fabian and Muschalik, Maximilian and Hammer, Barbara and H{\"u}llermeier, Eyke and Wachsmuth, Henning,
-    booktitle =  "Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics",
-    month =      apr,
-    year =       "2025",
-    address =    "Albuquerque, New Mexico",
-    publisher =  "Association for Computational Linguistics",
-    url =        "https://arxiv.org/abs/2502.06487",
+    title        = {Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection},
+    author       = {Splieth{\"o}ver, Maximilian  and Knebler, Tim  and Fumagalli, Fabian  and Muschalik, Maximilian  and Hammer, Barbara  and H{\"u}llermeier, Eyke  and Wachsmuth, Henning},
+    year         = 2025,
+    month        = apr,
+    booktitle    = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+    publisher    = {Association for Computational Linguistics},
+    address      = {Albuquerque, New Mexico},
+    pages        = {2421--2449},
+    isbn         = {979-8-89176-189-6},
+    url          = {https://aclanthology.org/2025.naacl-long.122/},
+    editor       = {Chiruzzo, Luis and Ritter, Alan and Wang, Lu}
 }
-
 ```
 
 ---
